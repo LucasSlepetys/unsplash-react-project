@@ -8,7 +8,6 @@ const API_KEY = import.meta.env.VITE_REACT_APP_API_ACCESS_KEY;
 export const useFetchImgs = () => {
   const { search } = getContext();
 
-  console.log(API_KEY);
   const response = useQuery({
     queryKey: ['imgs', search],
     queryFn: async () => {
